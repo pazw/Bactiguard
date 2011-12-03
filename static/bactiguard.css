@@ -1,0 +1,185 @@
+@import url(http://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister);
+@import url(http://fonts.googleapis.com/css?family=Nova+Mono);
+@import url(http://fonts.googleapis.com/css?family=Rancho);
+
+@keyframes shake {
+	0% { left: -15px; }
+	50% {left: 15px; }
+}
+
+@-moz-keyframes shake {
+	0% { left: -15px; }
+	50% {left: 15px; }
+}
+
+@-webkit-keyframes shake {
+	0% { left: -15px; }
+	50% {left: 15px; }
+}
+
+a {
+	color: #474;
+	text-decoration: none;
+}
+
+body {
+	color: #555;
+	font-family: 'Rancho', sans-serif;
+	font-size: 18px;
+	line-height: 1.3;
+	margin: 0 auto;
+	text-align: center;
+	width: 375px;
+}
+
+@media only screen and (max-device-width: 480px) {
+	body {
+		width: 310px;
+	}
+}
+
+button {
+	background: #77f;
+	border: 0;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'Rancho', sans-serif;
+	outline: 0;
+	padding: 5px;
+	position: relative;
+	text-shadow: rgba(0, 0, 0, .3) 2px 2px 0;
+}
+
+button.nav {
+	font-size: 40px;
+	transition: box-shadow 150ms;
+	-moz-transition: box-shadow 150ms;
+	-webkit-transition: box-shadow 150ms;
+	width: 100%;
+}
+button.nav:focus, button.nav:hover {
+	box-shadow: #77f 0 0 50px;
+	z-index: 1;
+}
+
+button.cancel {
+	background: #c42;
+}
+button.cancel:focus, button.cancel:hover {
+	box-shadow: #c42 0 0 50px;
+}
+
+button.calculate {
+	background: #6c1;
+}
+
+button.create {
+	background: #6c1;
+}
+button.create:focus, button.create:hover {
+	box-shadow: #6c1 0 0 50px;
+}
+
+button[disabled] {
+	background: #aaa;
+	color: #444;
+}
+
+button[disabled]:focus, button[disabled]:hover {
+	box-shadow: none;
+}
+
+code, pre {
+	color: #111;
+	font-family: 'Nova Mono', monospace;
+}
+
+h1 {
+	color: #000;
+	font-family: 'Love Ya Like A Sister';
+	font-size: 75px;
+	font-weight: normal;
+	margin: 0 0 10px;
+	text-shadow: #aaa 0 0 5px;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: normal;
+	margin: 10px 0;
+}
+
+input {
+	border: #ccc solid 1px;
+	border-radius: 3px;
+	box-shadow: #ddd 0 0 5px inset;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-family: 'Rancho', sans-serif;
+	font-size: 10px;
+	outline: 0;
+	padding: 3px 5px;
+	width: 50%;
+}
+
+input:focus {
+	border-color: #555;
+}
+
+input.good {
+	border-color: #6c1;
+	color: #6c1;
+}
+
+input.error, input.invalid {
+	border-color: #c42;
+	color: #c42;
+}
+
+input.invalid {
+	animation-name: shake;
+	animation-duration: 100ms;
+	animation-iteration-count: 3;
+	animation-timing-function: ease-in-out;
+	-moz-animation-name: shake;
+	-moz-animation-duration: 200ms;
+	-moz-animation-iteration-count: 3;
+	-moz-animation-timing-function: ease-in-out;
+	-webkit-animation-name: shake;
+	-webkit-animation-duration: 200ms;
+	-webkit-animation-iteration-count: 3;
+	-webkit-animation-timing-function: ease-in-out;
+	position: relative;
+}
+
+section {
+	margin: 0;
+	width: 100%;
+}
+
+#derp {
+	font-size: 12px;
+	margin: 30px 0;
+}
+
+#info {
+	margin: 5px 0 0;
+}
+
+#logo {
+	margin: 0 auto;
+	max-width: 375px;
+	width: 100%;
+}
+
+.p-join, .p-main, .p-party {
+	display: none;
+}
+#p-join .p-join,
+#p-main .p-main,
+#p-party .p-party
+{
+	display: block;
+}

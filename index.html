@@ -1,5 +1,36 @@
-<html>
-<head>
-</head>
+
+<!DOCTYPE html>
+<html manifest="static/bactiguard.appcache">
+  <head>
+  <title>Bacticalc</title>
+    <script src="static/jquery-1.7.1.min.js"></script>
+    <script src="static/bactiguard.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+   
+  <link href="static/bactiguard.css" rel="stylesheet">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="/static/ios-icon.png">
+  </head>
+  <body>
+  <section id="intro">
+	<img class="p-main" id="logo" src="static/bactiguard.png">
+	<h3>Bacticalc</h3>
+	<p> <class="p-main" id="info"> Calculate the cost for hospital
+  </section>  
+  <section id="graph">
+  </section>  
+  <section id="choose">
+    <p><input id="numberOfPatients" placeholder="Enter number of patients">
+    <p><button class="nav create" id="calculate" onClick="drawVisualization()">Calculate</button>
+  </section>
+   <script type="text/javascript">
+     // Load the Visualization API and the piechart package.
+  	google.load('visualization', '1.0', {'packages':['corechart']});
+  	// Set a callback to run when the Google Visualization API is loaded.
+  	google.setOnLoadCallback(drawVisualization);
+    </script>  
+  </body>
 </html>
 
